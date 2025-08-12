@@ -1,20 +1,19 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 
-function App() {
+function HomePage() {
   async function handleBuyNow() {
     try {
       const response = await fetch(
         "/.netlify/functions/create-checkout-session",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ quantity: 1 }),
         }
       );
       const { url } = await response.json();
-      window.location = url; // Redirect to Stripe checkout
+      window.location = url;
     } catch (error) {
       alert("Failed to initiate checkout.");
       console.error(error);
@@ -24,7 +23,6 @@ function App() {
   return (
     <div className="container py-5">
       <h1 className="mb-4 text-center">Custom Keychain Store</h1>
-
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="card shadow-sm">
@@ -54,4 +52,36 @@ function App() {
   );
 }
 
-export default App;
+function SuccessPage() {
+  return (
+    <div className="container py-5 text-center">
+      <h1 className="text-success">Payment Successful 🎉</h1>
+      <p>Thank you for your order! Your keychain will be shipped soon.</p>
+      <Link to="/" className="btn btn-primary">
+        Go Back Home
+      </Link>
+    </div>
+  );
+}
+
+function CancelPage() {
+  return (
+    <div className="container py-5 text-center">
+      <h1 className="text-danger">Payment Canceled</h1>
+      <p>Your order was not completed. You can try again at any time.</p>
+      <Link to="/" className="btn btn-secondary">
+        Back to Store
+      </Link>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/success" element={<SuccessPage />} />
+      <Route path="/cancel" element={<CancelPage />} />
+    </Routes>
+  );
+}
