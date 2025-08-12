@@ -1,0 +1,3 @@
+[build]
+  publish = "build"         # this is where React's production build outputs
+  functions = "netlify/functions"  # path to your serverless functions
