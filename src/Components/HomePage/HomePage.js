@@ -21,31 +21,27 @@ export default function HomePage() {
   }
 
   return (
-    <div className="container py-5">
-      <h1 className="mb-4 text-center">Custom Keychain Store</h1>
-      <div className="row justify-content-center">
-        <div className="col-md-6">
-          <div className="card shadow-sm">
-            <img
-              src="https://images.unsplash.com/photo-1565372910725-182f88775f9f?auto=format&fit=crop&w=600&q=80"
-              className="card-img-top"
-              alt="Keychain"
-            />
-            <div className="card-body">
-              <h5 className="card-title">Stylish Custom Keychain</h5>
-              <p className="card-text">
-                High-quality keychain made from durable materials. Perfect gift
-                or personal use.
-              </p>
-              <h4 className="text-primary">$12.99</h4>
-              <button
-                className="btn btn-primary btn-block mt-3"
-                onClick={handleBuyNow}
-              >
-                Buy Now
-              </button>
-            </div>
-          </div>
+    <div className="home-container">
+      <h1 className="home-title">Custom Keychain Store</h1>
+
+      <div className="product-container">
+        <img
+          src="/keychain-pic.webp"
+          alt="Custom Keychain"
+          className="product-image"
+        />
+
+        <div className="product-info">
+          <h2 className="product-title">Stylish Custom Keychain</h2>
+          <p className="product-description">
+            High-quality keychain made from durable materials. Perfect gift or
+            personal use.
+          </p>
+          <h3 className="product-price">£10.00</h3>
+
+          <button className="buy-button" onClick={handleBuyNow}>
+            Buy Now
+          </button>
         </div>
       </div>
     </div>
