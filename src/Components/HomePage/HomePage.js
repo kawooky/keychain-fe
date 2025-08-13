@@ -34,7 +34,7 @@ export default function HomePage() {
         <div className="product-info">
           <h2 className="product-title">CPT Wallop Key Chain</h2>
           <p className="product-description">Wallop Gary Ring</p>
-          <h3 className="product-price">£10.00</h3>
+          <h3 className="product-price">£4.00</h3>
 
           <button className="buy-button" onClick={handleBuyNow}>
             Buy Now
