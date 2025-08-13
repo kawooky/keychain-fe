@@ -11,15 +11,18 @@
   font-family: 'Share Tech Mono', monospace;
 }
 
-.home-title {
-  font-family: 'Anton', sans-serif;
-  font-size: 3.5rem;
-  letter-spacing: 0.2em;
-  margin-bottom: 3rem;
-  color: #ff3c00;
-  text-shadow: 0 0 10px #ff3c00aa;
-  text-transform: uppercase;
-}
+.title {
+    display: block;
+    max-width: 250px; /* limits how wide the logo can go */
+    height: auto; /* keeps aspect ratio */
+    margin: 0 auto 2rem auto; /* centers and gives space below */
+    
+    /* Give it the edgy orange look */
+    filter: brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(2784%) hue-rotate(4deg) brightness(101%) contrast(103%);
+    
+
+  }
+  
 
 .product-container {
   display: flex;

@@ -22,17 +22,17 @@ export default function HomePage() {
 
   return (
     <div className="home-container">
-      <h1 className="home-title">Custom Keychain Store</h1>
+      <img src="/logo.png" alt="Custom Keychain" className="title" />
 
       <div className="product-container">
         <img
-          src="/keychain-pic.webp"
+          src="/keychain-pic.jpg"
           alt="Custom Keychain"
           className="product-image"
         />
 
         <div className="product-info">
-          <h2 className="product-title">Stylish Custom Keychain</h2>
+          <h2 className="product-title">CPT Wallop Key Chain</h2>
           <p className="product-description">
             High-quality keychain made from durable materials. Perfect gift or
             personal use.
