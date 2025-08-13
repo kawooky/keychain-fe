@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   padding: 4rem 1rem;
-  font-family: 'Share Tech Mono', monospace;
+  /* font-family: 'Share Tech Mono', monospace; */
 }
 
 .title {
@@ -17,8 +17,7 @@
     height: auto; /* keeps aspect ratio */
     margin: 0 auto 2rem auto; /* centers and gives space below */
     
-    /* Give it the edgy orange look */
-    filter: brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(2784%) hue-rotate(4deg) brightness(101%) contrast(103%);
+
     
 
   }
@@ -29,9 +28,8 @@
   flex-wrap: wrap;
   max-width: 900px;
   background: #1e1e1e;
-  border: 2px solid #ff3c00;
+  border: 2px solid #ffffff;
   border-radius: 8px;
-  box-shadow: 0 0 30px #ff3c0044;
   padding: 2rem;
   gap: 2rem;
   align-items: center;
@@ -41,9 +39,9 @@
 .product-image {
   max-width: 300px;
   width: 100%;
-  border: 3px solid #ff3c00;
+  border: 3px solid #ffffff;
   border-radius: 6px;
-  box-shadow: 0 0 15px #ff3c00aa;
+  /* box-shadow: 0 0 15px #ff3c00aa; */
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -60,13 +58,15 @@
 }
 
 .product-title {
-  font-family: 'Anton', sans-serif;
+  /* font-family: 'Anton', sans-serif; */
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 700;
   font-size: 2rem;
-  color: #ff3c00;
+  color: #ffffff;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-shadow: 0 0 6px #ff3c00aa;
+  /* text-shadow: 0 0 6px #ff3c00aa; */
 }
 
 .product-description {
@@ -77,32 +77,31 @@
 }
 
 .product-price {
-  font-family: 'Anton', sans-serif;
+  /* font-family: 'Anton', sans-serif; */
   font-size: 2.5rem;
-  color: #ff3c00;
+  color: #ffffff;
   margin: 0;
   letter-spacing: 0.15em;
-  text-shadow: 0 0 8px #ff3c00cc;
+  /* text-shadow: 0 0 8px #ff3c00cc; */
 }
 
 .buy-button {
-  background: #ff3c00;
-  color: #121212;
+  background: #106c58;
+  color: #ffffff;
   border: none;
   padding: 1rem 2rem;
-  font-family: 'Anton', sans-serif;
-  font-size: 1.3rem;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 4px;
-  box-shadow: 0 0 10px #ff3c00cc;
+  /* box-shadow: 0 0 10px #ff3c00cc; */
   transition: background-color 0.3s ease, transform 0.2s ease;
   align-self: flex-start;
 }
 
 .buy-button:hover {
-  background: #ff5a20;
+  background: #01634e;
   transform: scale(1.05);
-  box-shadow: 0 0 20px #ff5a20cc;
+  box-shadow: 0 0 20px #002e24;
 }

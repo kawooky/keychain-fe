@@ -22,7 +22,7 @@ export default function HomePage() {
 
   return (
     <div className="home-container">
-      <img src="/logo.png" alt="Custom Keychain" className="title" />
+      <img src="/logo-white.png" alt="Custom Keychain" className="title" />
 
       <div className="product-container">
         <img
@@ -33,10 +33,7 @@ export default function HomePage() {
 
         <div className="product-info">
           <h2 className="product-title">CPT Wallop Key Chain</h2>
-          <p className="product-description">
-            High-quality keychain made from durable materials. Perfect gift or
-            personal use.
-          </p>
+          <p className="product-description">Wallop Gary Ring</p>
           <h3 className="product-price">£10.00</h3>
 
           <button className="buy-button" onClick={handleBuyNow}>
