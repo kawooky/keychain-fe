@@ -26,7 +26,7 @@ export default function HomePage() {
 
       <div className="product-container">
         <img
-          src="/keychain-pic.jpg"
+          src="/keychain-pic.jpeg"
           alt="Custom Keychain"
           className="product-image"
         />
